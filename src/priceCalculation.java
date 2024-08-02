@@ -8,3 +8,4 @@ public class priceCalculation {
         System.out.println(price * count);
     }
 }
+//1.2.8
