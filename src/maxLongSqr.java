@@ -5,9 +5,9 @@ public class maxLongSqr {
     public static void main(String[] args) {
 
         BigInteger maxLong = BigInteger.valueOf(Long.MAX_VALUE);
-        BigInteger root = maxLong.sqrt();
+        BigInteger kvadrat = maxLong.multiply(maxLong);
 
-        System.out.println(root);
+        System.out.println(kvadrat);
     }
 }
 //1.2.15
