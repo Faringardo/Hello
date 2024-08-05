@@ -11,9 +11,9 @@ public class doubleExpression {
 
     public static boolean expression(double a, double b, double c) {
 
-        a = c - b;
+        boolean result = Math.abs((a + b) - c) <= 0.0001;
 
-        return a + b == c;
+        return result;
     }
 }
 //1.2.11
