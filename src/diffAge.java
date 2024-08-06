@@ -9,12 +9,7 @@ public class diffAge {
     }
     public static byte getAgeDiff(byte age1, byte age2){
 
-        byte min = (byte) Math.min(age1, age2);
-        byte max = (byte) Math.max(age1, age2);
-
-        byte value = (byte) (max - min);
-
-        return value;
+        return (byte) Math.abs(age1 - age2);
     }
 }
 //1.3.3
