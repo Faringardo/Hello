@@ -9,8 +9,9 @@ public class Expression {
 
     public static char charExpression(int a){
 
-        char value = (char) ('\\' + a);
-        return value;
+        int rev = '\\';
+        int value = rev + a;
+        return (char) value;
     }
 }
 //1.3.2
