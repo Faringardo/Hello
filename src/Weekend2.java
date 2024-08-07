@@ -1,6 +1,7 @@
 public class Weekend2 {
 
     public static void main(String[] args) {
+
         String weekday = "Sunday";
 
         System.out.println(isWeekend(weekday));
