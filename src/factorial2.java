@@ -4,22 +4,17 @@ public class factorial2 {
 
     public static void main(String[] args) {
 
-        int value = 4;
+        int value = 8;
 
         System.out.println(factorial(value));
     }
 
     public static BigInteger factorial(int value) {
 
-        int result = 1;
-        if (value == 0 || value == 1) {
-            return BigInteger.ONE;
-        }else{
-            for (int i = 1; i <= value; i++) {
-                result = (result * i);
-            }
-            return BigInteger.valueOf(result);
-        }
+        BigInteger factor = new BigInteger("1");
+        for (int i = 2; i <= value; i++)
+            factor = factor.multiply(BigInteger.valueOf(i));
+        return factor;
     }
 }
 //1.4.7
