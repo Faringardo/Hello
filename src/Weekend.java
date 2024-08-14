@@ -10,8 +10,8 @@ public class Weekend {
 
         switch (weekday){
             case "Saturday", "Sunday": return true;
+            default: return false;
         }
-        return false;
     }
 }
 //1.4.10
