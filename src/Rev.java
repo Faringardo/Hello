@@ -10,6 +10,7 @@ public class Rev {
     }
 
     public static int[] inverseArray(int[] numbers){
+        if (numbers == null || numbers.length == 0) return numbers;
         int[] rev = new int[numbers.length];
         for (int i = 0; i < numbers.length; i++) {
             rev[numbers.length - i - 1] = numbers[i];
@@ -18,3 +19,4 @@ public class Rev {
     }
 }
 //1.5.6
+//проверка на пустой массив
