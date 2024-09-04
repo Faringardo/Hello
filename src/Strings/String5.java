@@ -45,9 +45,8 @@ public class String5 {
                 for (String textLine : textLines) {
                     if (textLine.startsWith(role + ":")) {
                         result.append(lineNumber).append(") ").append(textLine.substring(role.length() + 2)).append("\n");
-                        lineNumber++;
-
                     }
+                    lineNumber++;
                 }
                 result.append("\n");
             }
