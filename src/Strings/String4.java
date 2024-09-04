@@ -7,18 +7,16 @@ public class String4 {
 
     public static void main(String[] args) {
 
-        String email = "kata12@outlook.com";
+        String email = "kata12@gmail.com";
 
         System.out.println(isGmailOrOutlook(email));
     }
 
     public static boolean isGmailOrOutlook(String email){
 
-        String regex = "^[a-zA-Z0-9]+@gmail\\.com$";
+        String regex = "\\w{1,}@\\w{5}.\\w{3}";
 
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(email);
-        return matcher.matches();
+        return email.matches(regex);
     }
 }
 //1.6.10
